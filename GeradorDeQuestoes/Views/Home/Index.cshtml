@@ -1,0 +1,137 @@
+﻿<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+
+    <div class="modal-dialog">
+
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h6 class="modal-title">Gerar Questões</h6>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <br>
+
+                    <div class="form-group">
+
+                        <form asp-controller="Home" asp-action="gerarQuestoes" method="get">
+
+                            <fieldset>
+
+                                <div class="form-group">
+               
+                                    <div class="container text-center ">
+
+                                        <div class="input-group p-3">
+                                            <label class="input-group-text"
+                                                   for="inputGroupSelect01">Matéria:</label>
+                                            <select class="form-select" name="inputGroupSelect01">
+                                                <option selected></option>
+                                                <option value="arte">Arte</option>
+                                                <option value="algebra">Algebra</option>
+                                                <option value="algebra linear">Algebra Linear</option>
+                                                <option value="aritmética">Aritmética</option>
+                                                <option value="biologia">Biologia</option>
+                                                <option value="ciências físicas">Ciências Físicas</option>
+                                                <option value="conceitos gramaticais">Conceitos Gramaticais</option>
+                                                <option value="educação física">Educação Física</option>
+                                                <option value="filosofia">Filosofia</option>
+                                                <option value="física">Física</option>
+                                                <option value="geografia">Geografia</option>
+                                                <option value="geografia do brasil">Geografia do Brasil</option>
+                                                <option value="geometria">Geometria</option>
+                                                <option value="geometria plana">Geometria Plana</option>
+                                                <option value="gramática">Gramática</option>
+                                                <option value="história">História</option>
+                                                <option value="história das américas">História das Américas</option>
+                                                <option value="história geral">História Geral</option>
+                                                <option value="história do Brasil">História do Brasil</option>
+                                                <option value="inglês">Inglês</option>
+                                                <option value="literatura">Literatura</option>
+                                                <option value="português">Português</option>
+                                                <option value="produção textual">Produção Textual</option>
+                                                <option value="matemática">Matemática</option>
+                                                <option value="química">Química</option>
+                                                <option value="socioligia">Sociologia</option>
+                                                <option value="técnica e prática de redação">Técnica e Prática de Redação</option>
+                                                <option value="trigronometria">Trigonometria</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group p-3">
+                                            <label class="input-group-text" for="inputGroupSelect01">Outra Matéria:</label>
+                                            <input type="text" name="inputGroupSelect05" class="form-control" id="basic-url" aria-describedby="basic-addon3">
+                                        </div>
+
+                                        <div class="input-group p-3">
+                                            <label class="input-group-text"
+                                                   for="inputGroupSelect01">Tipo de Questão:</label>
+                                            <select class="form-select" name="inputGroupSelect02">
+                                                <option selected></option>
+                                                <option value="de múltipla escolha">Múltipla Escolha</option>
+                                                <option value="de verdadeiro ou falso">Verdadeiro ou Falso</option>
+                                                <option value="dissertativa">Dissertativa</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group p-3">
+                                            <label class="input-group-text"
+                                                   for="inputGroupSelect01">Nível de Dificuldade:</label>
+                                            <select class="form-select" name="inputGroupSelect03" >
+                                                <option selected></option>
+                                                   <option value="fácil">Fácil</option>
+                                                <option value="médio">Médio</option>
+                                                <option value="dificil">Dificil</option>
+                                            </select>
+                                        </div>
+
+                                        <div class="input-group p-3">
+                                            <label class="input-group-text"
+                                                   for="inputGroupSelect01">Número de Questões:</label>
+                                            <select class="form-select" name="inputGroupSelect04">
+                                                <option selected></option>
+                                                <option value="uma">1</option>
+                                                <option value="duas">2</option>
+                                                <option value="tres">3</option>
+                                                <option value="quatro">4</option>
+                                                <option value="cinco">5</option>
+                                                <option value="seis">6</option>
+                                                <option value="sete">7</option>
+                                                <option value="oito">8</option>
+                                                <option value="nove">9</option>
+                                                <option value="dez">10</option>
+                                            </select>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+
+                            </fieldset>
+
+                            <div class="row" style="text-align:right; align-items: center">
+                                <div>
+                                    <br>
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="submit" class="btn btn-danger" value="Delete">Gerar</button>
+
+
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
